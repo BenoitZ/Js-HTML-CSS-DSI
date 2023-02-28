@@ -28,15 +28,18 @@ header img{
 
 header ul{
     display: flex;
-    justify-content: end;
-    margin-left: 2%;
-    margin-right: 2%;
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* margin-left: 4%;
+    margin-right: 4%; */
     width: 93%;
+    margin: auto;
+    text-align: center;
 }
 
 header ul li{
     list-style-type: none;
-    margin-top: 3%;
+    margin: 1%;
     width: 70%;
 }
 
@@ -45,11 +48,10 @@ header ul li a{
     font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 1%;
 }
 
 span{
-    text-decoration: red underline;
+    text-decoration: red underline 2px;
 }
 
 
@@ -113,6 +115,9 @@ h2{
     text-shadow: 2px 2px rgba(0, 0, 0, 0.488);
     box-shadow: 20px 20px 20px 1px rgba(0, 0, 0, 0.195);
     padding: 5% 1%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sectionDeux ul li a{
@@ -123,7 +128,7 @@ h2{
 
 .cartes{
     text-align: center; 
-    line-height: 170%;
+    /* line-height: 170%; */
 }
 
 .cartesDeux ul li{
@@ -317,7 +322,8 @@ h4{
     width: 40%;
     /* height: 800px; */
     font-size: 0.5em;
-    box-shadow: 12px 12px 2px 1px #fd896950;
+    box-shadow: 4px 4px 2px 1px #fd896950;
+    border-radius: 3px;
 }
 
 input{
