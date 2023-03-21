@@ -45,13 +45,14 @@ header ul li{
 
 header ul li a{
     color: rgb(0, 0, 0);
-    font-size: 1em;
+    /* font-size: 100%; */
     text-transform: uppercase;
     text-decoration: none;
 }
 
 span{
     text-decoration: red underline 2px;
+    text-underline-offset: 5px;
 }
 
 
@@ -118,12 +119,10 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.sectionDeux ul li a{
-    font-size: 1.7em;
+    font-size: 2em;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .cartes{
@@ -135,6 +134,10 @@ h2{
     padding: 4.5% 4%;
     text-align: center;
 }
+
+
+
+
 
 .sectionDeux .cartesO{
     background-color: #FD8A69;
@@ -667,3 +670,93 @@ input{
         display: none;
     }
 }
+
+
+
+
+
+
+/* POPUP */
+
+/* carte6 TYPE */
+.carte{
+    display: none;
+    background-color: grey;
+    border-radius: 40px;
+    margin: auto;
+    top: 1%;
+    padding: 5%;
+    padding-top: 4%;
+    margin-left: 25%;
+    position: fixed;
+    width:50%;
+    height:97%;
+}
+
+.données h5{
+    margin-top: 20%;
+    background-color: rgb(69, 69, 69);
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.données p{
+    text-align: end;
+    padding-right: 4%;
+}
+
+.données img{
+    margin-left: 96%;
+    cursor: pointer;
+
+}
+
+.liste ol{
+    background-color: rgb(225, 220, 220);
+    width: 600px;
+    height: 160px;
+    border-radius: 10px;
+    padding-left: 40px ;
+    font-size: 1.5em;
+    padding-top: 3%;
+    margin-top: 20%;
+}
+
+/* carte 1 */
+#carteUne{
+    background-color: rosybrown;
+}
+
+
+
+
+
+/* CARROUSEL */
+
+#carrousel{
+    background-image: url('https://img.freepik.com/photos-premium/appareil-photo-vintage-comme-fond-ecran_39155-40.jpg');
+    width: 95%;
+    height: 420px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#container{
+    width: 500px;
+    height: 300px;
+    border: solid white 3px;
+    margin: auto;
+    margin-top: 4%;
+}
+
+
+
+
