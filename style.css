@@ -28,13 +28,10 @@ header img{
 
 header ul{
     display: flex;
-    /* justify-content: end; */
-    /* justify-content: space-around; */
-    /* margin-left: 4%;
-    margin-right: 4%; */
     width: 93%;
     margin: auto;
     text-align: center;
+    font-size: 90%;
 }
 
 header ul li{
@@ -45,7 +42,6 @@ header ul li{
 
 header ul li a{
     color: rgb(0, 0, 0);
-    /* font-size: 100%; */
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -89,6 +85,7 @@ h2{
 }
 
 .sectionUne img{
+    margin-top: 2%;
     width: 50%;
     height: 50%;
 }
@@ -101,25 +98,26 @@ h2{
 
 .sectionDeux ul{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
     margin-top: 10%;
-    margin-left: 6%;
+    /* margin-left: 6%; */
 }
 
 .sectionDeux ul li{
     margin-left: 2%;
     margin-right: 2%;
-    width: 20%;
-    /* height: 40%; */
+    width: 250px;
+    height: 250px;
     border-radius: 8%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.488);
     box-shadow: 20px 20px 20px 1px rgba(0, 0, 0, 0.195);
-    padding: 5% 1%;  
+    padding: 5% 5%;  
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 180%;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -134,10 +132,6 @@ h2{
     padding: 4.5% 4%;
     text-align: center;
 }
-
-
-
-
 
 .sectionDeux .cartesO{
     background-color: #FD8A69;
@@ -172,7 +166,7 @@ h3{
 }
 
 
-/* CAMEMBERT */
+/* CAMEMBERT
 .sectionTrois{
     background: radial-gradient(circle, rgba(190,191,201,1) 0%, rgba(255,255,255,1) 0%, rgba(142,146,152,1) 68%);
     padding: 10%;
@@ -195,7 +189,7 @@ h3{
     display: none;
 }
 
-/* Camembert icones */
+/* Camembert icones
 .sectionTrois .illustrations{
     position: absolute;
     width: 7%;
@@ -356,6 +350,193 @@ input{
 }
 
 
+/*RESPONSIVE CARTES*/
+@media screen and (max-width : 1200px){
+
+    .sectionDeux ul li{
+        width: 180px;
+        height: 180px;   
+        margin-top: 2%;
+        /* margin-left: 4%; */
+        font-size: 140%;
+    }
+}
+
+/*RESPONSIVE TABLETTE*/
+@media screen and (max-width : 900px){
+        /* HEADER */
+        header{
+            position: relative;
+        }
+    
+        header img{
+            width: 15%;
+            /* height: 90px; */
+            margin: 2%;
+        }
+    
+        header ul{
+            display:none;
+            /* margin-left: 5%; */
+        }
+    
+        .mobile{
+            display: block;  
+            position: relative;
+        }
+    
+        .mobile .fa-bars{
+            position: absolute;
+            top: 3%; right: 30px; 
+            position: fixed;
+            z-index: 2;
+            background-color: #98999988;
+            padding: 2%;
+            border-radius: 8px;
+        }
+    
+        header{
+            position: relative;
+        }
+    
+        .menuburger a{
+            font-size: 1em;          
+        }
+    
+        .mobile input{
+            position: absolute;
+            top: 30px; left: 190px;   
+            width: 400%; 
+            position: fixed;
+        }
+    
+        .menuburger{
+            width: 220px;
+            height: 40%;
+            padding: 5%;
+            border-radius: 10px;
+            position: fixed;
+        }
+       
+        input:checked ~ .menuburger{
+            background: #989999e1;
+            padding-bottom: 4px;
+            display: block;
+            color: white;
+            position: fixed;
+            z-index: 1;
+        }
+        .sectionUne{
+            flex-wrap: wrap;
+        }
+
+        .sectionUne img{
+            margin: auto;
+            width: 90%;
+        }
+
+
+        /* SECTION DEUX - CARTES */
+        .titreUn{
+            display: block;
+            font-size: 1.8em;
+            height: 50%;
+            padding: 4%;
+            width: 83%;
+            border-radius: 20px;
+            margin-top: 20%;
+        }
+    
+        h3{
+            display: none;
+        }
+    
+        .sectionDeux ul li{
+            width: 260px;
+            height: 260px;   
+            margin-top: 9%;
+            margin-left: 4%;
+        }
+    
+        .sectionDeux .cartesO{
+            margin-top: 8%;
+        }
+    
+        .sectionDeux .cartesB{
+            margin-top: 20%;
+        }
+    
+        .sectionDeux .cartesV{
+            margin-top: -3%;
+            padding-top: 6%;
+        }
+    
+        .sectionDeux .cartesG{
+            padding-top: 6%;
+        }
+
+            /* FOOTER */
+        footer{
+            background: #3E5E86;
+            font-size: 1.5em;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.488);
+        }
+
+        .contact{
+            text-align: center;
+            border-right: none;
+            padding-right: 10%;
+            color: white;
+            padding-left: 10%;
+            padding-top: 10%;
+        }
+
+        .formulaire{
+            width: 350%;
+            height: 40%;
+            margin: auto;
+            font-size: 0.8em;
+            margin-top: 30%;
+        }
+
+        input{
+            height: 50px;
+        }
+
+        .formulaire button{
+            height: 60px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reseauxDeux{
+            display: flex;
+        }
+
+        .reseauxDeux a i{
+            margin-top: 50px;
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+            font-size: 1.8em;
+            padding-top: 18%;
+            margin-bottom: 40%;
+        }
+
+        .contact p{
+            margin-top: 15%;
+        }
+
+        .reseaux{
+            display: none;
+        }
+}
+
 
 /*RESPONSIVE PORTABLE*/
 @media screen and (max-width : 600px){
@@ -364,73 +545,8 @@ input{
         background-color: white ;    
     }
 
-    /* HEADER */
-    header{
-        position: relative;
-    }
 
-    header img{
-        width: 30%;
-        height: 90px;
-        margin: 2%;
-    }
-
-    header ul{
-        display:none;
-        /* margin-left: 5%; */
-    }
-
-    .mobile{
-        display: block;  
-        position: relative;
-    }
-
-    .mobile .fa-bars{
-        position: absolute;
-        top: 30px; left: 330px; 
-        position: fixed;
-        z-index: 2;
-        background-color: #98999988;
-        padding: 2%;
-        border-radius: 8px;
-    }
-
-    header{
-        position: relative;
-    }
-
-    .menuburger a{
-        font-size: 1em;
-        
-    }
-
-    .mobile input{
-        position: absolute;
-        top: 30px; left: 190px;   
-        width: 400%; 
-        position: fixed;
-    }
-
-    .menuburger{
-        width: 220px;
-        height: 40%;
-        padding: 5%;
-        border-radius: 10px;
-        position: fixed;
-    }
-
-
-    input:checked ~ .menuburger{
-        background: #989999e1;
-        padding-bottom: 4px;
-        display: block;
-        color: white;
-        position: fixed;
-        z-index: 1;
-    }
-
-
-    /* SECTION UNE BANNIERE */
+    /* SECTION UNE - BANNIERE */
     .titre{
         padding: 0%;
     }
@@ -462,7 +578,7 @@ input{
     }
 
 
-    /* SECTION DEUX CARTES */
+    /*SECTION DEUX - CARTES*/
     .titreUn{
         display: block;
         font-size: 1.8em;
@@ -478,39 +594,14 @@ input{
     }
 
     .sectionDeux ul li{
-        width: 40%;
-        height: 150px;   
+        width: 200px;
+        height: 200px;   
         margin-top: 9%;
         margin-left: 4%;
+        font-size: 150%;
     }
 
-    .sectionDeux ul li a{
-        font-size: 1.2em;
-        padding: 4%;
-        line-height: 170%;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.488);
-    }
-
-    .sectionDeux .cartesO{
-        margin-top: 8%;
-    }
-
-    .sectionDeux .cartesB{
-        margin-top: 20%;
-    }
-
-    .sectionDeux .cartesV{
-        margin-top: -3%;
-        padding-top: 11%;
-    }
-
-    .sectionDeux .cartesG{
-        padding-top: 8%;
-        font-size: 0.9em;
-    }
-
-
-    /* CAMEMBERT */
+   /* CAMEMBERT 
     .sectionTrois{
         background: linear-gradient(180deg, rgba(201,207,207,1) 19%, rgba(225,233,233,1) 47%);
         height: 1400px;
@@ -528,7 +619,7 @@ input{
         margin-top: 0%;
     }
 
-    /* Camembert icones */
+     Camembert icones 
     .sectionTrois .iconeUne .illustrations{
         margin-left: 28%;
         margin-top: 90%;
@@ -610,66 +701,11 @@ input{
         margin-top: 305%;
         font-size: 2em;
         width: 50%;
-    }
+    } */
 
-    /* FOOTER */
-    footer{
-        background: #3E5E86;
-        font-size: 1.5em;
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.488);
-    }
-
-    .contact{
-        text-align: center;
-        border-right: none;
-        padding-right: 10%;
-        color: white;
-        padding-left: 10%;
-        padding-top: 10%;
-    }
-
-    .formulaire{
-        width: 400px;
-        height: 40%;
-        margin: 0%;
-        font-size: 0.8em;
-        margin-top: 30%;
-    }
-
-    input{
-        height: 50px;
-    }
-
-    .formulaire button{
-        height: 60px;
-        font-size: 1.2em;
-    }
-
-    .reseauxDeux{
-        display: flex;
-    }
-
-    .reseauxDeux a i{
-        margin-top: 50px;
-        width: 80px;
-        height: 80px;
-        margin-left: 10px;
-        font-size: 1.8em;
-        padding-top: 18%;
-        margin-bottom: 40%;
-    }
-
-    .contact p{
-        margin-top: 15%;
-    }
-
-    .reseaux{
-        display: none;
-    }
 }
+
+
 
 
 
@@ -678,10 +714,10 @@ input{
 
 /* POPUP */
 
-/* carte6 TYPE */
-.carte{
+/* carte1 */
+#carteUne{   /*#carte{  */
     display: none;
-    background-color: grey;
+    background-color: #fbc7bc;
     border-radius: 40px;
     margin: auto;
     top: 1%;
@@ -695,8 +731,9 @@ input{
 
 .données h5{
     margin-top: 20%;
-    background-color: rgb(69, 69, 69);
-    width: 600px;
+    background-color: #FD8A69;
+    color: white;
+    width: 97%;
     margin: auto;
     border-radius: 10px;
     height: 60px;
@@ -705,35 +742,179 @@ input{
     justify-content: center;
     margin-bottom: 3%;
     color: white;
-}
+    font-size: 130%;
+    text-align: center;
+    text-shadow: black 2px 2px;}
 
 .données p{
     text-align: end;
-    padding-right: 4%;
+    padding-right: 6%;
+    margin-top: 8%;
+    font-weight: bolder;
 }
 
 .données img{
-    margin-left: 96%;
+    margin-left: 93%;
     cursor: pointer;
-
+    width: 4%;
 }
 
 .liste ol{
     background-color: rgb(225, 220, 220);
-    width: 600px;
-    height: 160px;
+    width: 97%;
+    height: 360px;
     border-radius: 10px;
-    padding-left: 40px ;
-    font-size: 1.5em;
-    padding-top: 3%;
+    font-size: 145%;
+    padding: 3% 10% ;
+    font-weight: bolder;
+    line-height: 150%;
     margin-top: 20%;
+    color: #FD8A69;
+    background-color: #FDECE9;
 }
 
-/* carte 1 */
-#carteUne{
-    background-color: rosybrown;
+.liste img{
+    width: 60%;
+    margin-left: 50%;
+    position: relative;
 }
 
+/* carte2 */
+#carteDeux{
+    display: none;
+    background-color: #7B97B5;
+    border-radius: 40px;
+    margin: auto;
+    top: 1%;
+    padding: 5%;
+    padding-top: 4%;
+    margin-left: 25%;
+    position: fixed;
+    width:50%;
+    height:97%;
+    position: absolute;
+}
+
+.données2 h5{
+    margin-top: 20%;
+    background-color: #10417D;
+    color: white;
+    width: 97%;
+    margin: auto;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    text-shadow: black 2px 2px;}
+
+.données2 p{
+    text-align: end;
+    padding-right: 6%;
+    margin-top: 8%;
+    font-weight: bolder;
+}
+
+.données2 img{
+    margin-left: 93%;
+    cursor: pointer;
+    width: 4%;
+}
+
+.liste2 img{
+    width: 60%;
+    margin-left: 50%;
+    position: relative;
+}
+
+.liste2 ol{
+    background-color: rgb(225, 220, 220);
+    width: 97%;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 145%;
+    padding: 3% 10% ;
+    font-weight: bolder;
+    line-height: 150%;
+    margin-top: 20%;
+    color: #10417D;
+    background-color: #FDECE9;
+    text-align: center;
+}
+
+/* carte3 */
+/* #carteDeux{
+    display: none;
+    background-color: #7B97B5;
+    border-radius: 40px;
+    margin: auto;
+    top: 1%;
+    padding: 5%;
+    padding-top: 4%;
+    margin-left: 25%;
+    position: fixed;
+    width:50%;
+    height:97%;
+    position: absolute;
+}
+
+.données h5{
+    margin-top: 20%;
+    background-color: #10417D;
+    color: white;
+    width: 97%;
+    margin: auto;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    text-shadow: black 2px 2px;}
+
+.données p{
+    text-align: end;
+    padding-right: 6%;
+    margin-top: 8%;
+    font-weight: bolder;
+}
+
+.données img{
+    margin-left: 93%;
+    cursor: pointer;
+    width: 4%;
+}
+
+.données2 img{
+    width: 60%;
+    margin-left: 50%;
+    position: relative;
+}
+
+.liste ol{
+    background-color: rgb(225, 220, 220);
+    width: 97%;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 145%;
+    padding: 3% 10% ;
+    font-weight: bolder;
+    line-height: 150%;
+    margin-top: 20%;
+    color: #10417D;
+    background-color: #FDECE9;
+    text-align: center;
+}
+
+
+ */ */
 
 
 
