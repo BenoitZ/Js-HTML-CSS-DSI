@@ -914,28 +914,69 @@ input{
 }
 
 
- */ */
-
 
 
 
 /* CARROUSEL */
 
-#carrousel{
-    background-image: url('https://img.freepik.com/photos-premium/appareil-photo-vintage-comme-fond-ecran_39155-40.jpg');
-    width: 95%;
-    height: 420px;
-    margin: auto;
-    overflow: hidden;
+.sectionTrois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
 }
 
+#carroussel{
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 5px 15px black;
+
+}
 
 #container{
-    width: 500px;
-    height: 300px;
-    border: solid white 3px;
-    margin: auto;
-    margin-top: 4%;
+    width: 800px;
+    height: 400px;
+}
+
+#carroussel i{
+    color: rgba(255, 255, 255, 0.339);
+    font-size: 3em;
+}
+
+#g{
+    position: absolute;
+    top: 180px; 
+    left: 20px;
+}
+
+#d{
+    position: absolute;
+    top: 180px; 
+    left: 640px;
+}
+
+#g:hover{
+    transform: scale(2.1);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#d:hover{
+    transform: scale(2.1);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.photo{
+    width: 700px;
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    border: solid black 2px;
 }
 
 
